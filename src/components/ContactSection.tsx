@@ -121,6 +121,27 @@ function Contacts() {
                 Пришлите скан любого документа по ОТ — дадим заключение бесплатно в течение 24 часов.
               </p>
             </div>
+
+            <div className="flex gap-3 pt-2">
+              <a
+                href="https://vk.com/leaderexp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 border border-border rounded-xl px-4 py-2.5 text-sm font-medium hover:border-blue-400/60 hover:text-blue-400 transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.79 3.236c-1.458 2.494-2.105 1.251-2.105-.796V7.5a.5.5 0 0 0-.5-.5h-3.6c-.248 0-.4.205-.4.4 0 0-.012 1.127.012 1.7.068 1.607.95 2.268.95 2.268s-2.082 3.763-2.61 4.688A.5.5 0 0 0 8 16.5h3.44a.5.5 0 0 0 .428-.243l1.632-2.808s2.5 2.702 3.27 3.043c.37.163.733.008.733.008h2.953a.5.5 0 0 0 .4-.8s-1.978-2.652-3.073-3.988c-.49-.595-.422-.85 0-1.376C18.76 9.13 21.5 7.46 21.5 7.46a.5.5 0 0 0-.047-.46h.094Z"/></svg>
+                ВКонтакте
+              </a>
+              <a
+                href="https://max.ru/id6311194141_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 border border-border rounded-xl px-4 py-2.5 text-sm font-medium hover:border-purple-400/60 hover:text-purple-400 transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.27-1.67 7.87c-.12.54-.45.67-.91.42l-2.52-1.86-1.22 1.17c-.13.13-.25.25-.51.25l.18-2.57 4.67-4.22c.2-.18-.04-.28-.32-.1L7.9 14.97l-2.46-.77c-.54-.17-.55-.54.11-.8l9.62-3.71c.45-.16.84.11.7.78z"/></svg>
+                MAX
+              </a>
+            </div>
           </div>
 
           {sent ? (
@@ -189,12 +210,25 @@ function Footer() {
         <p className="text-xs text-muted-foreground text-center">
           © 2026 БезопасТруд. Все права защищены.
         </p>
-        <div className="flex gap-4">
-          {NAV_LINKS.map((l) => (
-            <a key={l.href} href={l.href} className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              {l.label}
-            </a>
-          ))}
+        <div className="flex items-center gap-4">
+          <a
+            href="https://vk.com/leaderexp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-blue-400 transition-colors"
+            title="ВКонтакте"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.79 3.236c-1.458 2.494-2.105 1.251-2.105-.796V7.5a.5.5 0 0 0-.5-.5h-3.6c-.248 0-.4.205-.4.4 0 0-.012 1.127.012 1.7.068 1.607.95 2.268.95 2.268s-2.082 3.763-2.61 4.688A.5.5 0 0 0 8 16.5h3.44a.5.5 0 0 0 .428-.243l1.632-2.808s2.5 2.702 3.27 3.043c.37.163.733.008.733.008h2.953a.5.5 0 0 0 .4-.8s-1.978-2.652-3.073-3.988c-.49-.595-.422-.85 0-1.376C18.76 9.13 21.5 7.46 21.5 7.46a.5.5 0 0 0-.047-.46h.094Z"/></svg>
+          </a>
+          <a
+            href="https://max.ru/id6311194141_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-purple-400 transition-colors"
+            title="MAX"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.93 7.27-1.67 7.87c-.12.54-.45.67-.91.42l-2.52-1.86-1.22 1.17c-.13.13-.25.25-.51.25l.18-2.57 4.67-4.22c.2-.18-.04-.28-.32-.1L7.9 14.97l-2.46-.77c-.54-.17-.55-.54.11-.8l9.62-3.71c.45-.16.84.11.7.78z"/></svg>
+          </a>
         </div>
       </div>
     </footer>
